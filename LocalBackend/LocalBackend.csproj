@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -160,9 +161,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
+    <Compile Include="Controllers\MunicipalityController.cs" />
+    <Compile Include="Controllers\OfficialController.cs" />
     <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataObjects\Municipality.cs" />
+    <Compile Include="DataObjects\Official.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
+    <Compile Include="Migrations\201709110756100_AddedMunicipality.cs" />
+    <Compile Include="Migrations\201709110756100_AddedMunicipality.Designer.cs">
+      <DependentUpon>201709110756100_AddedMunicipality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709110812035_AddedMunicipality1.cs" />
+    <Compile Include="Migrations\201709110812035_AddedMunicipality1.Designer.cs">
+      <DependentUpon>201709110812035_AddedMunicipality1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709110819001_AddProps.cs" />
+    <Compile Include="Migrations\201709110819001_AddProps.Designer.cs">
+      <DependentUpon>201709110819001_AddProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709110822554_AddedOfficial.cs" />
+    <Compile Include="Migrations\201709110822554_AddedOfficial.Designer.cs">
+      <DependentUpon>201709110822554_AddedOfficial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709110825256_oh.cs" />
+    <Compile Include="Migrations\201709110825256_oh.Designer.cs">
+      <DependentUpon>201709110825256_oh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709110837007_AddPropsToMuni.cs" />
+    <Compile Include="Migrations\201709110837007_AddPropsToMuni.Designer.cs">
+      <DependentUpon>201709110837007_AddPropsToMuni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709110845101_AddPropToOfficial.cs" />
+    <Compile Include="Migrations\201709110845101_AddPropToOfficial.Designer.cs">
+      <DependentUpon>201709110845101_AddPropToOfficial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -181,6 +215,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709110756100_AddedMunicipality.resx">
+      <DependentUpon>201709110756100_AddedMunicipality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709110812035_AddedMunicipality1.resx">
+      <DependentUpon>201709110812035_AddedMunicipality1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709110819001_AddProps.resx">
+      <DependentUpon>201709110819001_AddProps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709110822554_AddedOfficial.resx">
+      <DependentUpon>201709110822554_AddedOfficial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709110825256_oh.resx">
+      <DependentUpon>201709110825256_oh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709110837007_AddPropsToMuni.resx">
+      <DependentUpon>201709110837007_AddPropsToMuni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709110845101_AddPropToOfficial.resx">
+      <DependentUpon>201709110845101_AddPropToOfficial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\LocalBackend - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

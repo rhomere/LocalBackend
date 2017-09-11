@@ -9,6 +9,7 @@ using Microsoft.Azure.Mobile.Server.Config;
 using LocalBackend.DataObjects;
 using LocalBackend.Models;
 using Owin;
+using System.Data.Entity.Migrations;
 
 namespace LocalBackend
 {
@@ -23,7 +24,10 @@ namespace LocalBackend
                 .ApplyTo(config);
 
             // Use Entity Framework Code First to create database tables based on your DbContext
-            Database.SetInitializer(new MobileServiceInitializer());
+            //Database.SetInitializer(new MobileServiceInitializer());
+
+            var migrator = new DbMigrator(new Migrations.Configuration());
+            migrator.Update();
 
             MobileAppSettingsDictionary settings = config.GetMobileAppSettingsProvider().GetMobileAppSettings();
 

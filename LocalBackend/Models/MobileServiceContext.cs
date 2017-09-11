@@ -34,5 +34,9 @@ namespace LocalBackend.Models
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
+
+        public System.Data.Entity.DbSet<LocalBackend.DataObjects.Municipality> Municipalities { get; set; }
+
+        public System.Data.Entity.DbSet<LocalBackend.DataObjects.Official> Officials { get; set; }
     }
 }
