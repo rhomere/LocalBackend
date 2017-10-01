@@ -17,5 +17,13 @@ namespace LocalBackend.DataObjects
         public string ImageUrl { get; set; }
 
         public string Municipality { get; set; }
+
+        public int Placement { get; set; }
+
+        public string Info { get; set; }
+
+        public string TermLength { get; set; }
+
+        public string NextElection { get; set; }
     }
 }

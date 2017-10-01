@@ -196,6 +196,26 @@
     <Compile Include="Migrations\201709110845101_AddPropToOfficial.Designer.cs">
       <DependentUpon>201709110845101_AddPropToOfficial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709302019262_AddedPlacementToOfficials.cs" />
+    <Compile Include="Migrations\201709302019262_AddedPlacementToOfficials.Designer.cs">
+      <DependentUpon>201709302019262_AddedPlacementToOfficials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710010051414_AddedImageToMuni.cs" />
+    <Compile Include="Migrations\201710010051414_AddedImageToMuni.Designer.cs">
+      <DependentUpon>201710010051414_AddedImageToMuni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710010114493_AddedInfo.cs" />
+    <Compile Include="Migrations\201710010114493_AddedInfo.Designer.cs">
+      <DependentUpon>201710010114493_AddedInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710010154487_AddedInfoToOfficial.cs" />
+    <Compile Include="Migrations\201710010154487_AddedInfoToOfficial.Designer.cs">
+      <DependentUpon>201710010154487_AddedInfoToOfficial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710010235222_AddedTermLength.cs" />
+    <Compile Include="Migrations\201710010235222_AddedTermLength.Designer.cs">
+      <DependentUpon>201710010235222_AddedTermLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -237,6 +257,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709110845101_AddPropToOfficial.resx">
       <DependentUpon>201709110845101_AddPropToOfficial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709302019262_AddedPlacementToOfficials.resx">
+      <DependentUpon>201709302019262_AddedPlacementToOfficials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710010051414_AddedImageToMuni.resx">
+      <DependentUpon>201710010051414_AddedImageToMuni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710010114493_AddedInfo.resx">
+      <DependentUpon>201710010114493_AddedInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710010154487_AddedInfoToOfficial.resx">
+      <DependentUpon>201710010154487_AddedInfoToOfficial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710010235222_AddedTermLength.resx">
+      <DependentUpon>201710010235222_AddedTermLength.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
