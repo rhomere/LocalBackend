@@ -25,5 +25,7 @@ namespace LocalBackend.DataObjects
         public string TermLength { get; set; }
 
         public string NextElection { get; set; }
+
+        public string YearStarted { get; set; }
     }
 }

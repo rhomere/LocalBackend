@@ -216,6 +216,10 @@
     <Compile Include="Migrations\201710010235222_AddedTermLength.Designer.cs">
       <DependentUpon>201710010235222_AddedTermLength.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710011200406_AddedYearStarted.cs" />
+    <Compile Include="Migrations\201710011200406_AddedYearStarted.Designer.cs">
+      <DependentUpon>201710011200406_AddedYearStarted.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -272,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710010235222_AddedTermLength.resx">
       <DependentUpon>201710010235222_AddedTermLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710011200406_AddedYearStarted.resx">
+      <DependentUpon>201710011200406_AddedYearStarted.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
